@@ -31,7 +31,7 @@ void main() {
     //阻塞写方式打开FIFO文件
     filedsc = open(FIFO_NAME, O_WRONLY);
     if(-1==filedsc){
-        perror("back open FIFO");
+        perror("server open FIFO");
         exit(errno);
     }
     while (running) {
@@ -62,9 +62,9 @@ void main() {
     }
     //关闭FIFO文件
     if (-1 == close(filedsc)) {
-        perror("background fifo close");
+        perror("server fifo close");
         exit(errno);
     }
     //用于显示前后台退出的顺序
-    printf("background exited\n");
+    printf("server exited\n");
 }
