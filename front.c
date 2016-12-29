@@ -47,7 +47,7 @@ int msgid, filedsc;char buffer[BUFFER_SIZE];char *command = NULL;//指令格式
         exit(errno);
     }
     while (flag) {
-        printf(">>");
+        printf(">>hey Professor_Jia>>");
         msg_del(&data);
         //读入标准输入
         fgets(buffer, BUFFER_SIZE, stdin);
