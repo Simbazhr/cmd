@@ -25,8 +25,8 @@ void main() {
     pid_t fpid;
     fpid = fork();
     if (fpid == 0) {
-        execl("./back", "back", "", NULL);
-        perror("background");
+        execl("./server", "server", "", NULL);
+        perror("server");
         exit(errno);
     } else if (fpid < 0) {
         perror("fork");
@@ -46,7 +46,7 @@ void main() {
 
     filedsc = open(FIFO_NAME, O_RDONLY);
     if(-1==filedsc){
-        perror("front open FIFO");
+        perror("client open FIFO");
         exit(errno);
     }
     while (flag) {
@@ -117,7 +117,7 @@ void main() {
     }
     //关闭，删除FIFO文件
     if(-1==close(filedsc)){
-        perror("front close FIFO");
+        perror("client close FIFO");
         exit(errno);
     }
     unlink(FIFO_NAME);
