@@ -124,5 +124,5 @@ void main() {
     //等待后台进程退出
     wait(&status);
     //用于显示前后台退出的顺序
-    printf("foreground exited\n");
+    printf("client exited\n");
 }
