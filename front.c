@@ -10,7 +10,7 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "msg_operation.h"
+#include "msg.h"
 #include <wait.h>
 
 void main() {
