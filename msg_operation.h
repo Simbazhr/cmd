@@ -10,13 +10,13 @@
 #define BUFFER_SIZE 4096
 #define MESSAGE_ID 973837
 #define FIFO_NAME "/tmp/mine10_fifo"
-
 struct msg_wrapper{
     long int type;
-    char text[BUFFER_SIZE];
-};
-
+    char text[4096];};
 int msg_del(struct msg_wrapper *msg);
 int msg_add(struct msg_wrapper *msg, char *string);
 int msg_cmd(struct msg_wrapper *msg, char *string);
 int msg_end(struct msg_wrapper *msg);
+
+
+
