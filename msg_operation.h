@@ -1,7 +1,3 @@
-//
-// Created by yutao on 16-10-31.
-//
-
 #ifndef CMD_MESSAGE_H
 #define CMD_MESSAGE_H
 #endif //CMD_MESSAGE_H
