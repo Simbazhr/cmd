@@ -8,7 +8,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include "msg_operation.h"
+#include "msg.h"
 #include <errno.h>
 #include <sys/msg.h>
 
