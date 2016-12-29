@@ -2,7 +2,7 @@
 // Created by yutao on 16-10-31.
 //
 
-#include "msg_operation.h"
+#include "msg.h"
 #include "string.h"
 int msg_del(struct msg_wrapper *msg)
 {
